@@ -15,7 +15,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Polymer Starter Kit" />
-    <title>Polymer Starter Kit</title>
+    <title>Poly Clock</title>
     <!-- Place favicon.ico in the `app/` directory -->
     <!-- Chrome for Android theme color -->
     <meta name="theme-color" content="#2E3AA1">
@@ -51,11 +51,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <script src="../bower_components/document-register-element/build/document-register-element.js"></script>
     <script src="../bower_components/clock-face/clock-face.js"></script>
     <style type="text/css">
-        jarvz-clock paper-card {
+        poly-clock paper-card {
             min-width: 30%;
             vertical-align: top;
         }
-        clock-face , clock-face.theme1 {
+        clock-face, clock-face.theme1 {
             border-color: rgb(218, 218, 218);
             width: 250px;
             height: 250px;
@@ -82,7 +82,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             border-color: #F5BFBB;
             background: #f44336;
         }
-        jarvz-clock paper-dropdown-menu {
+        poly-clock paper-dropdown-menu {
             display: block;
         }
         flip-clock {
@@ -150,8 +150,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 </head>
 
 <body>
-    <jarvz-clock clock-type="analog" time-zone='IST'></jarvz-clock>
-
+    <poly-clock clock-type="analog" time-zone='IST'></poly-clock>
+    <!-- <clock-container></clock-container> -->
     <!-- build:js scripts/app.js -->
     <script src="scripts/app.js"></script>
     <!-- endbuild-->
