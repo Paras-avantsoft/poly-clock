@@ -1,0 +1,160 @@
+<!doctype html>
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Polymer Starter Kit" />
+    <title>Polymer Starter Kit</title>
+    <!-- Place favicon.ico in the `app/` directory -->
+    <!-- Chrome for Android theme color -->
+    <meta name="theme-color" content="#2E3AA1">
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Tile color for Win8 -->
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="PSK">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <!-- Tile icon for Win8 (144x144) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild-->
+    <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
+    <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <!-- endbuild -->
+    <!-- will be replaced with elements/elements.vulcanized.html -->
+    <link rel="import" href="elements/elements.html">
+    <!-- endreplace-->
+    <!-- For shared styles, shared-styles.html import in elements.html -->
+    <style is="custom-style" include="shared-styles"></style>
+
+    <!-- Clock Element -->
+    <link rel="stylesheet" href="../bower_components/clock-face/clock-face.css">
+    <script src="../bower_components/document-register-element/build/document-register-element.js"></script>
+    <script src="../bower_components/clock-face/clock-face.js"></script>
+    <style type="text/css">
+        jarvz-clock paper-card {
+            min-width: 30%;
+            vertical-align: top;
+        }
+        clock-face , clock-face.theme1 {
+            border-color: rgb(218, 218, 218);
+            width: 250px;
+            height: 250px;
+            margin: 40px auto 20px auto;
+            background: rgb(172, 172, 172);
+        }
+        clock-face.theme2 {
+            border-color: #D0ECF9;
+            background: #03a9f4;
+        }
+        clock-face.theme3 {
+            border-color: #FFD0E0;
+            background: #ff4081;
+        }
+        clock-face.theme4 {
+            border-color: #FFE6C1;
+            background: #ff9800;
+        }
+        clock-face.theme5 {
+            border-color: #BAE6BB;
+            background: #4caf50;
+        }
+        clock-face.theme6 {
+            border-color: #F5BFBB;
+            background: #f44336;
+        }
+        jarvz-clock paper-dropdown-menu {
+            display: block;
+        }
+        flip-clock {
+            top: 0px;
+            bottom: 0px;
+            margin: auto;
+            display: table;
+            vertical-align: middle;
+        }
+        #clock.flip-clock {
+            height: 325px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        #clock.flip-clock *.flip-clock {
+            font-size: 40px;
+            font-weight: normal;
+        }
+        #clock.flip-clock #minutes0 {
+            margin-left: -10px;
+        }
+        #clock.flip-clock #seconds1 {
+            margin-right: 0px;
+        }
+        #clock.flip-clock #hours0, #clock.flip-clock #minutes0, #clock.flip-clock #seconds0 {
+            margin-right: 0px;
+            padding-right: 0px;
+            border-width: 4px 0px 4px 4px !important;
+        }
+        #clock.flip-clock #hours1, #clock.flip-clock #minutes1, #clock.flip-clock #seconds1 {
+            padding-left: 5px;
+            border-width: 4px 4px 4px 0px !important;
+        }
+        #clock.flip-clock .num.flip-clock, .theme1 .num.flip-clock{
+            color: #000;
+            border-radius: 0px;
+            border: 4px solid rgb(218, 218, 218);
+            background: rgb(172, 172, 172);
+            box-shadow: none;
+        }
+        .theme2 .num.flip-clock {
+            border-color: #D0ECF9 !important;
+            background: #03a9f4 !important;
+        }
+        .theme3 .num.flip-clock {
+            border-color: #FFD0E0 !important;
+            background: #ff4081 !important;
+        }
+        .theme4 .num.flip-clock {
+            border-color: #FFE6C1 !important;
+            background: #ff9800 !important;
+        }
+        .theme5 .num.flip-clock {
+            border-color: #BAE6BB !important;
+            background: #4caf50 !important;
+        }
+        .theme6 .num.flip-clock {
+            border-color: #F5BFBB !important;
+            background: #f44336 !important;
+        }
+        #clock.flip-clock .num.flip-clock:after {
+            height: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <jarvz-clock clock-type="analog" time-zone='IST'></jarvz-clock>
+
+    <!-- build:js scripts/app.js -->
+    <script src="scripts/app.js"></script>
+    <!-- endbuild-->
+</body>
+
+</html>
